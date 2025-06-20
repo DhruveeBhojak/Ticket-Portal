@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2025-06-18 17:46:05.924198",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Task_assign",
+ "enabled": 1,
+ "event": "Value Change",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Add your message here</p>\n",
+ "message_type": "Markdown",
+ "minutes_offset": 0,
+ "modified": "2025-06-20 10:15:24.416160",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "Respond on the task",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Manager"
+  },
+  {
+   "receiver_by_role": "Client"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Respond on the task",
+ "value_changed": "status"
+}

@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2025-06-18 17:26:38.253701",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Task_assign",
+ "enabled": 1,
+ "event": "Save",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h6> a new task is assigned</h6>",
+ "message_type": "HTML",
+ "minutes_offset": 0,
+ "modified": "2025-06-20 12:03:58.033756",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "task assigned",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_role": "Employee"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": " new task assigned",
+ "value_changed": "employee_id"
+}

@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TR_.###",
+ "creation": "2025-06-18 10:43:21.786046",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "task_details_section",
+  "task_id",
+  "task_type",
+  "ticket",
+  "subject",
+  "task_description",
+  "response_section",
+  "employee_name",
+  "solution",
+  "status_of_the_task",
+  "total_time_spent",
+  "client_response_section",
+  "feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "task_id",
+   "fieldtype": "Link",
+   "label": "Task Id",
+   "options": "Task_assign"
+  },
+  {
+   "fetch_from": "task_id.type",
+   "fieldname": "task_type",
+   "fieldtype": "Data",
+   "label": "Task Type"
+  },
+  {
+   "fetch_from": "task_id.subject",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fetch_from": "task_id.type_description",
+   "fieldname": "task_description",
+   "fieldtype": "Small Text",
+   "label": "Task Description "
+  },
+  {
+   "fieldname": "response_section",
+   "fieldtype": "Section Break",
+   "label": "Response "
+  },
+  {
+   "fetch_from": "task_id.statement",
+   "fieldname": "solution",
+   "fieldtype": "Small Text",
+   "label": "solution"
+  },
+  {
+   "fieldname": "status_of_the_task",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status of the Task",
+   "options": "\nClosed\nReopen",
+   "reqd": 1
+  },
+  {
+   "fieldname": "task_details_section",
+   "fieldtype": "Section Break",
+   "label": "Task Details "
+  },
+  {
+   "fetch_from": "task_id.ticket_id",
+   "fieldname": "ticket",
+   "fieldtype": "Data",
+   "label": "ticket_id",
+   "options": "Ticket"
+  },
+  {
+   "fetch_from": "task_id.duration",
+   "fieldname": "total_time_spent",
+   "fieldtype": "Duration",
+   "hide_days": 1,
+   "hide_seconds": 1,
+   "label": "Total Time Spent"
+  },
+  {
+   "fieldname": "client_response_section",
+   "fieldtype": "Section Break",
+   "label": "Client Response"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Small Text",
+   "label": "Feedback"
+  },
+  {
+   "fetch_from": "employee_id.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee name"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-20 14:18:14.620220",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "Task Response",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Client",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Red",
+   "title": "Closed"
+  },
+  {
+   "color": "Orange",
+   "title": "Reopen"
+  }
+ ]
+}

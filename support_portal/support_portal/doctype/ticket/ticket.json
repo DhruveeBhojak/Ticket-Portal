@@ -1,0 +1,108 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Ticket id-.###",
+ "creation": "2025-06-17 17:18:38.266357",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "client_name",
+  "subject",
+  "column_break_rzoq",
+  "priority",
+  "type",
+  "status",
+  "section_break_gnou",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "client_name",
+   "fieldtype": "Link",
+   "label": "Client Name",
+   "options": "New_client"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Type",
+   "options": "\nBug\nFeature\nImprovement\nQueries"
+  },
+  {
+   "default": "Medium",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "\nHigh\nMedium\nLow"
+  },
+  {
+   "fieldname": "column_break_rzoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_gnou",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Open\nIn progress\nOn hold\nResolved\nClosed\nReopen"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-20 14:16:07.703290",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "Ticket",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Purple",
+   "title": "Open"
+  },
+  {
+   "color": "Yellow",
+   "title": "In process"
+  },
+  {
+   "color": "Green",
+   "title": "Resolved"
+  },
+  {
+   "color": "Blue",
+   "title": "On hold"
+  },
+  {
+   "color": "Red",
+   "title": "Closed"
+  },
+  {
+   "color": "Orange",
+   "title": "Reopen"
+  }
+ ],
+ "title_field": "subject"
+}

@@ -1,0 +1,42 @@
+{
+ "cards": [
+  {
+   "card": "Assigned Task"
+  },
+  {
+   "card": "Bug Report"
+  },
+  {
+   "card": "Feature Report"
+  },
+  {
+   "card": "Queries Reports"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "No Of Features Reports",
+   "width": "Half"
+  },
+  {
+   "chart": "No Of Queries Report",
+   "width": "Half"
+  },
+  {
+   "chart": "no of Bug Reports",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-06-18 09:20:24.041180",
+ "dashboard_name": "Employee Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-06-20 12:11:20.610976",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "Employee Dashboard",
+ "owner": "Administrator"
+}

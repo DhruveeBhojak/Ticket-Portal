@@ -1,0 +1,209 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TA-.###",
+ "creation": "2025-06-17 18:32:21.806639",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1ell",
+  "client",
+  "client_name",
+  "type",
+  "column_break_unat",
+  "ticket_id",
+  "subject",
+  "priority",
+  "status",
+  "section_break_yixx",
+  "type_description",
+  "section_break_czsi",
+  "remake",
+  "amended_from",
+  "developer_responses_section",
+  "statement",
+  "duration"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1ell",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Task_assign",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "New_client"
+  },
+  {
+   "fetch_from": "client.client_name",
+   "fieldname": "client_name",
+   "fieldtype": "Data",
+   "label": "Client Name"
+  },
+  {
+   "fieldname": "ticket_id",
+   "fieldtype": "Link",
+   "label": "Ticket_id",
+   "options": "Ticket"
+  },
+  {
+   "fetch_from": "ticket_id.subject",
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  },
+  {
+   "fieldname": "column_break_unat",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "ticket_id.type",
+   "fieldname": "type",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Type"
+  },
+  {
+   "fieldname": "section_break_yixx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "ticket_id.description",
+   "fieldname": "type_description",
+   "fieldtype": "Small Text",
+   "label": "Type Description"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_czsi",
+   "fieldtype": "Section Break",
+   "label": "Manager Responses"
+  },
+  {
+   "fieldname": "remake",
+   "fieldtype": "Small Text",
+   "label": "Comment"
+  },
+  {
+   "fetch_from": "ticket_id.priority",
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Priority",
+   "options": "\nHigh\nMedium\nLow"
+  },
+  {
+   "default": "Open",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status ",
+   "options": "\nOpen\nIn process\nOn hold\nResolved"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "developer_responses_section",
+   "fieldtype": "Section Break",
+   "label": "Developer Responses"
+  },
+  {
+   "fieldname": "statement",
+   "fieldtype": "Small Text",
+   "label": "Statement"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration "
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-20 14:53:41.409815",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "Task_assign",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [
+  {
+   "color": "Blue",
+   "title": "High"
+  },
+  {
+   "color": "Cyan",
+   "title": "Medium"
+  },
+  {
+   "color": "Gray",
+   "title": "Low"
+  },
+  {
+   "color": "Purple",
+   "title": "Open"
+  },
+  {
+   "color": "Yellow",
+   "title": "In process"
+  },
+  {
+   "color": "Blue",
+   "title": "On hold"
+  },
+  {
+   "color": "Red",
+   "title": "Closed"
+  }
+ ],
+ "title_field": "subject"
+}

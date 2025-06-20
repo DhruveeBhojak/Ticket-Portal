@@ -1,0 +1,55 @@
+{
+ "cards": [
+  {
+   "card": "New Client"
+  },
+  {
+   "card": "no of reports"
+  },
+  {
+   "card": "Assign Task"
+  },
+  {
+   "card": "Bug Report"
+  },
+  {
+   "card": "Feature Report"
+  },
+  {
+   "card": "Queries Reports"
+  },
+  {
+   "card": "Task Response"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "No of Reports Filed",
+   "width": "Half"
+  },
+  {
+   "chart": "no of Bug Reports",
+   "width": "Half"
+  },
+  {
+   "chart": "No Of Features Reports",
+   "width": "Half"
+  },
+  {
+   "chart": "No Of Queries Report",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-06-18 09:17:00.970979",
+ "dashboard_name": "Manager Dashboard",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "modified": "2025-06-20 13:54:14.386994",
+ "modified_by": "Administrator",
+ "module": "Support Portal",
+ "name": "Manager Dashboard",
+ "owner": "Administrator"
+}
